@@ -1,7 +1,26 @@
 /* custom.css */  
   
-.site-logo {  
-    height: 60px; /* ロゴの高さを80pxに設定 */
-    width: auto;      /* 幅は自動調整します */  
+/* .site-logo {   */
+    /* height: 60px; ロゴの高さを80pxに設定 */
+    /* width: auto;      幅は自動調整します   */
     /* margin: 10px; ロゴの周りにマージンを追加   */
-}  
+/* } */
+/* h1.page-header {
+    display: none !important;
+}
+
+body .post-title {
+    display: none !important;
+} */
+
+.categories-timestamp {
+    display: none !important;
+}
+
+body .published {
+    display: none !important;
+}
+
+body .post-info .label {
+    display: none !important;
+}
