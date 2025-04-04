@@ -25,9 +25,9 @@ body .post-info .label {
     display: none !important;
 }
 
-body {
+/* body {
     background-color: #f4f4f4; /* 背景色を変更 */
-}
+} */
 
 body .container{
     font-family: 'Lato', sans-serif;/* フォントを変更 */
