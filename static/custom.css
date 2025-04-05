@@ -41,3 +41,89 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; /* フレックスボックスを有効化 */
     align-items: center; /* 垂直方向に中央揃え */
 }
+
+/* 全体の幅を画面幅に収める */
+/* body .container {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
+
+/* 画像のレスポンシブ対応 */
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* 相対的な間隔 */
+    margin-bottom: 2rem; /* 相対的な余白 */
+}
+
+.responsive-image {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* 縦並びに変更 */
+        gap: 1rem; /* 間隔を小さくする */
+        margin-bottom: 0.5rem; /* 下部の余白を調整 */
+    }
+
+    .responsive-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.about-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 80px; /* デフォルトの余白 */
+}
+
+.about-table .table-header {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.about-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .about-table {
+        margin-top: 20px; /* スマホでは余白を小さくする */
+    }
+}
+
+
+/* 動画をレスポンシブ対応にする */
+.video-container {
+    text-align: center; /* 動画を中央揃え */
+    max-width: 100%; /* 親要素の幅に収める */
+    margin: 0 auto; /* 中央揃え */
+}
+
+.responsive-video {
+    width: 100%; /* 動画の幅を親要素に合わせる */
+    max-width: 560px; /* 最大幅を560pxに制限 */
+    height: auto; /* アスペクト比を維持 */
+    display: block; /* 余白を削除 */
+}
+
+/* スマホ表示の調整 */
+@media (max-width: 768px) {
+    .responsive-video {
+        max-width: 100%; /* スマホでは画面幅に収める */
+    }
+}
