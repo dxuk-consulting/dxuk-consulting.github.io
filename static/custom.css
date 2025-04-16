@@ -127,3 +127,16 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 100%; /* スマホでは画面幅に収める */
     }
 }
+
+/* contact_us.md専用の背景画像設定 */
+.contact-us-container {
+    background-image: url('../images/TowerBridge_matsu_01.png'); /* 背景画像のパス */
+    background-size: auto; /* 背景画像をコンテナ内に収める */
+    background-position: center; /* 背景画像を中央に配置 */
+    background-repeat: no-repeat; /* 背景画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像をスクロールに追従させる */
+    width: 100%; /* 親要素の幅に合わせる */
+    min-height: 100vh; /* コンテナの高さを画面全体の高さに設定 */
+    display: block; /* 余白を削除 */
+    margin: 0 auto; /* 中央揃え */
+}
